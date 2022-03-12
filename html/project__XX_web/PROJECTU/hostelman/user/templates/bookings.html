@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block title %}Home{% endblock %}
+{%block content%}
+{% if user.is_authenticated %}
+ <p>{{ msg }}</p><br>
+<table>
+<tr>
+<th>DATE</th> <th>HOSTEL NAME</th> <th>ROOM NO</th> <th>BOOKING STATUS</th>
+</tr>
+{%  for booking in bookings %}
+<tr>
+<td><a href="{%  url 'receipt' %}?booking_id={{ booking.booking_id}} ">{{ booking.created_at }}</a></td> <td>{{ booking.hostel }}</td> <td>{{ booking.room }}</td> <td>{{ booking.status }}</td> <td><a href="{%  url 'checkout' %}?booking_id={{ booking.booking_id }}&email={{ user.email }}" >checkout</a></td>
+</tr>
+{%  endfor %}
+</table>
+
+{% endif %}
+{% endblock %}

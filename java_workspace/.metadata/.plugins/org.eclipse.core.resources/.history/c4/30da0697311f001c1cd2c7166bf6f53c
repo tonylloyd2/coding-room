@@ -1,0 +1,68 @@
+
+package exercise;
+import java.util.*;
+ // @author lloyd 
+public class Exercise9 {
+ 
+	public static void main(String[] args) {
+	     Scanner scanner = new Scanner(System.in);
+	     System.out.println("Enter the number of rows and columns");
+	 		int rows = scanner.nextInt();
+	 		int column = scanner.nextInt();
+	 		int [][] array = new int [rows][column];
+	 		int sum = 0,sum1=0;
+	 		 for (int i = 0 ; i < rows; i++) {
+	 			 for (int j = 0; j < column; j++) {
+	 	          System.out.print("Enter number"+(j+1)+" for  column"+(j+1)+" and row"+(i+1)+" : ");
+	 				array[i][j] = scanner.nextInt();  
+	 			 }
+	 		 }
+	 		 System.out.println("you have entered ");
+	   System.out.println(Arrays.deepToString(array));
+	  
+	   System.out.println();
+	 		 for (int i = 0 ; i < rows; i++) { 
+	 			 int min = array[i][0] ;
+	 			 int max = array[i][0];
+	 			  for (int j = 0; j < column; j++) {
+	 				max = array[i][j] < max ? max : array[i][j];
+	 				min = array[i][j] > min ? min : array[i][j];
+	 			 }
+	 			System.out.println("Row "+(i+1)+"  maximum  = "+max+ " minimum = "+min);  
+	 		 } 			 
+	      System.out.println();
+ 			 for (int j = 0; j < column; j++) {
+ 				int min = array[0][j] ;
+	 			 int max = array[0][j];
+				max = array[0][j] < max ? max : array[0][j];
+				min = array[0][j] > min ? min : array[0][j];
+ 				 for (int i = 0 ; i < rows; i++) { 
+ 				 
+	 	     }
+ 				System.out.println("Columns "+(j+1)+"  maximum  = "+max+ " minimum = "+min);  
+	}
+ 			 
+	      
+	      
+ 		 
+	    /*   int min = array[0] ;
+	   int max = array[0] ;
+	 for (int i = 1 ; i < array.length ; i++ ) {
+		 max = array[i] < max ? max : array[i];
+	     min = array[i] > min ? min : array[i];
+	 }
+	System.out.println("max : "+max +"\nmin : "+ min);*/
+		}
+ 
+	}
+ 
+
+	
+	
+	
+	
+	
+	
+	
+	
+	}

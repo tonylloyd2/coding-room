@@ -1,0 +1,85 @@
+ package ASSIGNMENT3;
+import java.util.Scanner;
+public class test {
+ 
+	public static void main(String[] args) {
+  Scanner scan = new Scanner(System.in);
+	int TIME,DISTANCE,engineCAPACITY,YEAR,carryingCAPACITY;
+	  String color1,make1,cartype;
+	    /*private String name,color, cargo,make,license;
+	    private int capacity,wheels,passengers;
+	    protected int mileage;
+	    private int yearOfMake;
+	    private int speed;
+	    protected int enginecapacity;*/
+			
+	   
+	  
+	  
+			System.out.println("specify if the vehicle is a  lorry or car");
+			 cartype=scan.nextLine();
+			System.out.println("driving hours per day");
+			 TIME=scan.nextInt(); 
+	        System.out.println("average distance of the drive");
+	         DISTANCE=scan.nextInt();
+	        System.out.println("enter year of make");
+	         YEAR=scan.nextInt();
+	         scan.nextLine();
+	        System.out.println("enter the color");
+		        color1=scan.nextLine();
+		    System.out.println("enter the make-type of the vehicle");
+		         make1=scan.nextLine();
+		    System.out.println("set the engine capacity");
+	          engineCAPACITY=scan.nextInt();
+	  
+	         
+	         vehicle v1=new vehicle(cartype, YEAR);
+		        v1.setEnginecapacity(engineCAPACITY);
+		        v1.calculatemileage(DISTANCE);
+		        
+	         
+	         
+	         
+ 	         if (cartype.equals("car")) 
+	  
+	  {      
+ 	        	 
+ 	        	 
+		    System.out.println("enter the name");
+	        String name=scan.nextLine();
+	        System.out.println("enter the make-type of the "+name);
+	        make1=scan.nextLine();
+ 
+	  }
+	  else if (cartype.equals("lorry")) 
+	  {     //System.out.println("");
+	        System.out.println("enter the engine capacity");
+	        engineCAPACITY=scan.nextInt();
+	        System.out.println("enter the carrying capacity");
+             carryingCAPACITY=scan.nextInt();	        
+
+			lorry l1=new lorry(cartype,YEAR,carryingCAPACITY);
+		      l1.setEnginecapacity(engineCAPACITY);
+		      l1.calculatemileage(DISTANCE);
+		      
+		      System.out.println("NAME:"+l1.getName());
+		      System.out.println("YEAR OF MAKE:"+l1.getYearOfMake());
+		      System.out.println("ENGINE CAPACITY:"+l1.getEnginecapacity());
+		      System.out.println("Mileage:" +l1.calculatemileage(DISTANCE));
+            System.out.println(""+cartype+" "+TIME+" "+YEAR+" "+make1+" "+DISTANCE);
+
+	  }
+
+	
+	  }
+  
+  
+  
+  
+  
+  
+  
+		
+	
+
+}

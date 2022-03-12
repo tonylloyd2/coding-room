@@ -1,0 +1,20 @@
+/**
+ * 
+ */
+package loopingExercise;
+
+/**
+ * @author lloyd
+ *
+ */
+public class NestedLoops {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

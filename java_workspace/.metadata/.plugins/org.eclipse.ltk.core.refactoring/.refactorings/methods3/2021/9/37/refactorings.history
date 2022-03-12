@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Extract local variable &apos;scanner&apos; from expression &apos;new Scanner(System.in)&apos;&#x0A;- Original project: &apos;methods3&apos;&#x0A;- Variable name: &apos;scanner&apos;&#x0A;- Destination method: &apos;methods3.Methods3.getName()&apos;&#x0A;- Variable expression: &apos;new Scanner(System.in)&apos;&#x0A;- Replace occurrences of expression with variable" description="Extract local variable &apos;scanner&apos;" final="false" id="org.eclipse.jdt.ui.extract.temp" input="/src&lt;methods3{Methods3.java" name="scanner" replace="true" selection="312 22" stamp="1631122169021" varType="false" version="1.0"/>
+</session>

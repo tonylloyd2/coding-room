@@ -1,0 +1,31 @@
+package music;
+
+import java.io.IOException;
+
+import javax.sound.sampled.LineUnavailableException;
+import javax.sound.sampled.UnsupportedAudioFileException;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+
+
+public class MainTest extends JFrame {
+    JLabel title;
+	public MainTest() {
+		//set the frame attributes
+		setVisible(true);
+		setLayout(null);
+		setResizable(true);
+		setSize(500,500);
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+		
+		//set the frame components
+		title = new JLabel(" Register");
+		title.setBounds(250, 10, 80, 20);
+
+         add(title);		
+	}
+	public static void main(String[] args) throws UnsupportedAudioFileException,IOException,LineUnavailableException{
+		MainTest obj  = new MainTest();
+	}
+
+}

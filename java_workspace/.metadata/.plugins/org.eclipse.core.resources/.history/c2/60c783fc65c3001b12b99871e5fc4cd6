@@ -1,0 +1,33 @@
+import java.util.Scanner;
+public class lloyd {
+	public static void main(String[] args) 
+	{
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Enter Your Marks");
+		double Marks = scanner.nextDouble();
+		
+    }
+	public void Marks(char GRADE) {
+	 
+	   if (GRADE>=70 && GRADE<=100 ) {GRADE = 'A';}
+	    else if(GRADE>=60 && GRADE<70) {GRADE = 'B';}
+	    else if(GRADE>=50 && GRADE<60) {GRADE = 'C';}
+	    else if(GRADE>=40 && GRADE<50) {GRADE = 'D';}
+	    else if( GRADE<40) {GRADE = 'E';}
+	    else {System.out.println("invalid entry");}
+	   
+	   switch (GRADE) 
+	   {case 'A':System.out.println("DISTINCTION");break;
+	    case 'B':System.out.println("excellent");break;
+	    case 'C':System.out.println("PASS");break;
+	    case 'D':System.out.println("FAIL");break;
+	    case 'E':System.out.println("RE-TAKE");break; }
+      	
+	}
+	   
+	   
+	   
+		}
+	
+
+

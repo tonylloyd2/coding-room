@@ -1,0 +1,24 @@
+/**
+ * 
+ */
+package methods;
+
+/**
+ * @author lloyd
+ *
+ */
+public class Methods {
+	public static void main(String[] args) {
+		String argument = "Never say never.";
+		printTwice(argument);
+		printTwice("Don't make me say this twice!");
+
+	
+	
+	}	
+	
+public static void printTwice(String s) {
+System.out.println(s);
+System.out.println(s);
+}
+}

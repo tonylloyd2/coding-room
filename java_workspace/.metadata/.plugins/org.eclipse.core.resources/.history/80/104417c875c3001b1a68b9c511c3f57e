@@ -1,0 +1,20 @@
+/**
+ * 
+ */
+package ArrayStudents;
+
+/**
+ * @author lloyd
+ *
+ */
+public class Credentials {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

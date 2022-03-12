@@ -1,0 +1,15 @@
+/**
+ * 
+ */
+package constructors;
+
+ 
+public class gs2 extends Dog{
+
+ 	 
+	public static void main(String[] args) {
+		
+ 
+	}
+
+}

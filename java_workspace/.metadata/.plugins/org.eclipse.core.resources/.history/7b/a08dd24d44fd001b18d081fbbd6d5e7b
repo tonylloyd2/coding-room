@@ -1,0 +1,26 @@
+/**
+ * 
+ */
+package methods;
+
+import java.util.Scanner;
+
+/**
+ * @author lloyd
+ *
+ */
+public class Methods {
+	public static void main(String[] args) {
+	 Scanner scanner =new Scanner(System.in);
+	 System.out.println("i bet your entry will be printed twice");
+     String entry=scanner.nextLine();
+     System.out.println();
+     printTwice(entry);
+     scanner.close();
+	}	
+	
+public static void printTwice(String s) {
+System.out.println(s);
+System.out.println(s);
+}
+}

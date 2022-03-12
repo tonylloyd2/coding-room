@@ -1,0 +1,37 @@
+/**
+ * 
+ */
+package divisor;
+
+import java.util.Scanner;
+
+// * @author lloyd
+ 
+public class Divisor {
+ 
+	public static void main(String[] args) {
+ 
+		Scanner scanner=new Scanner(System.in);
+		
+		while (true) {
+			
+			System.out.println("enter number to find the sum of its divisors");
+			int num=scanner.nextInt();
+			int half=num/2;int sum=0;
+			for(int i=1;i<=half;i++) {
+				if (num % i==0) {
+					 sum+=i;
+				 
+					System.out.println(sum);
+				   break;
+					
+	                
+	                
+				}
+			}
+		}
+		
+	 
+	}
+
+}

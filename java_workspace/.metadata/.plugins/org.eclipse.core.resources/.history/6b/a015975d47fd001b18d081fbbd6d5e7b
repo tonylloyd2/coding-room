@@ -1,0 +1,68 @@
+/**
+ * 
+ */
+package methods;
+
+import java.util.Scanner;
+
+/**
+ * @author lloyd
+ *
+ */
+public class Methods {
+	public static void main(String[] args) {
+	Scanner scanner =new Scanner(System.in);
+	System.out.println("chose numbers 1 to 5 to call a method");
+	int select=scanner.nextInt();
+	switch(select) 
+	{
+	case 1:
+	 System.out.println("i bet your entry will be printed twice");
+     String entry=scanner.nextLine();
+     System.out.println();
+     printTwice(entry);
+     scanner.close();
+	case 2:
+		String index[]= {"number","number","number","number"};
+		int a[]= {};
+		for(int i=0;i<4;i++) {
+	System.out.println("enter "+index[i]);
+	  a[i]= scanner.nextInt();
+		
+	//math(a,a,a,a);
+	}
+	}
+	}	
+	
+public static void printTwice(String s) {
+System.out.println(s);
+System.out.println(s);
+}
+public static void math(int x,int y,int z,int q) {
+	System.out.println(x+y+z+q);
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

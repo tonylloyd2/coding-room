@@ -1,0 +1,20 @@
+/**
+ * 
+ */
+package database_connect;
+
+/**
+ * @author lloyd
+ *
+ */
+class Mariadb_database {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

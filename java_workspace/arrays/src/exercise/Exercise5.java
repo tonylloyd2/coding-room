@@ -1,0 +1,43 @@
+/**
+ * 
+ */
+package exercise;
+ 
+// * @author lloyd
+import java.util.*; 
+
+public class Exercise5 {
+
+	public static void main(String[] args) {
+		 Scanner scanner = new Scanner(System.in);
+		 
+            System.out.println("enter the number of digits to input");
+            int arrSize = scanner.nextInt();
+             int array [] = new int [arrSize];
+               
+               for (int i = 0 ; i < array.length ; i++ ) {
+            	   System.out.print("enter number"+(i+1)+" : ");
+            	   array[i] = scanner.nextInt();
+               }
+		 System.out.println("you have entered :  "+Arrays.toString(array)+"   numbers");
+		
+		 int compare = 0 
+				 ;
+		 System.out.println();
+		 
+		 System.out.println("enter the number to search in the array");
+		 int numUser = scanner.nextInt();
+		 
+         for (int i = 0 ; i < array.length ; i++ ) {
+        
+        	 if ( numUser == array[i] ) 
+        	 compare += 1 ;
+         }
+ 
+          System.out.println(compare != 0 ? "the digit  : "+numUser+ "  exits  : "+compare+"  times in the array"  :
+        	  "the digit  : "+numUser+ " does not exits  in the array");
+          
+		 scanner.close();
+	}
+
+}

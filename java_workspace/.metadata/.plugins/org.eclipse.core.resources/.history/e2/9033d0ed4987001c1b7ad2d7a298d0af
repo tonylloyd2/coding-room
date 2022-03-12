@@ -1,0 +1,37 @@
+package music;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.io.IOException;
+
+import javax.sound.sampled.LineUnavailableException;
+import javax.sound.sampled.UnsupportedAudioFileException;
+import javax.swing.Action;
+import javax.swing.JOptionPane;
+
+@SuppressWarnings("serial")
+public class Event_Handler extends MainTest implements ActionListener{
+   
+	 public Event_Handler() throws LineUnavailableException, IOException, UnsupportedAudioFileException {
+		super();
+	 }
+
+	public void actionPerformed(ActionEvent onclick_event) {
+	    	while(!onclick_event.getSource().equals(quit)) {
+				if(onclick_event.getSource().equals(play_or_pause)) {
+					System.out.println("playing");
+					clip.start();
+				}
+				else if (onclick_event.getSource().equals(play_or_pause) ) {
+					clip.stop();
+				}
+				else if (onclick_event.getSource().equals(loop)) {
+					
+					JOptionPane.showMessageDialog(null," please in put the number of time to loop then press loop"," having a problem to loop",JOptionPane.INFORMATION_MESSAGE);
+					
+					clip.loop(3);
+				}
+				
+		    	}
+
+	         }
+}

@@ -1,0 +1,20 @@
+/**
+ * 
+ */
+package lucky_number;
+// * @author lloyd
+import java.util.*;
+public class LuckyNumber {
+    static Scanner scanner=new Scanner(System.in);
+	public static void main(String[] args) {
+//     System.out.println("lets play a game \n  i  have some 4-digit lucky numbers try to guess one of them \n"
+//     		+ " of course we'll discuss payments later ");
+//     int num1=scanner.nextInt();
+//      String LuckyNumbers="you've guessed right ";
+//      String notLuckyNumbers="sorry wrong guess";
+      System.out.println((2121/1000)+((2121%1000)/100)); 
+    		
+		
+	}
+
+}

@@ -1,0 +1,34 @@
+/**
+ * 
+ */
+package file_Reader;
+
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+/**
+ * @author lloyd
+ *
+ */
+import java.util.*;
+class File_Reader {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+	 try {
+			Scanner filereader = new Scanner(new FileReader("testfile.txt"));
+			 System.out.println(filereader.nextLine()); 
+			 System.out.println(filereader.nextLine()); 
+			
+			
+			
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+//			e.printStackTrace();
+			System.out.println("the file was not found");
+		}
+		
+	}
+
+}

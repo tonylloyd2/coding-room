@@ -1,0 +1,36 @@
+/**
+ * 
+ */
+
+/**
+ * @author lloyd
+ *
+ */
+public class methods {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	
+	  	
+	  	 {
+	  	  student s1=new student();
+	  	  s1.setAge(19);
+	  	  s1.setId(3402328);
+	  	  s1.setGender('M');
+	  	  s1.setName("jacy");
+	  	  s1.setRegNo("cct/00080/030");
+		System.out.println(s1.getName());
+	  	System.out.println(s1.getAge());
+	  	System.out.println(s1.getId());
+	  	System.out.println(s1.getGender());
+	  	System.out.println(s1.getRegNo());
+	  	 
+	  	 
+	  	 
+	  	 }
+	}
+
+}

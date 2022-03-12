@@ -1,0 +1,29 @@
+/**
+ * 
+ */
+package divisor;
+
+import java.util.Scanner;
+
+// * @author lloyd
+public class PrimeNumbers {
+ 
+	public static void main(String[] args) {
+		Scanner scanner=new Scanner(System.in);
+         int test;
+		System.out.println("number prime???");
+		int primeNum=scanner.nextInt();
+	 	for(int i=1;i<=primeNum;i++) {
+	 	test=primeNum%i;
+	 	if(test>2) {
+	 		System.out.println("not prime");
+	 	}
+	 	else {
+	 		System.out.println("is prime");
+	 	}
+	 		
+	 	}
+		
+	}
+
+}

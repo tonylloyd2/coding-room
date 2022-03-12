@@ -1,0 +1,44 @@
+package music;
+import java.io.File;
+import java.io.IOException;
+import java.util.Scanner;
+import javax.sound.sampled.AudioInputStream;
+import javax.sound.sampled.AudioSystem;
+import javax.sound.sampled.Clip;
+import javax.sound.sampled.LineUnavailableException;
+import javax.sound.sampled.UnsupportedAudioFileException;
+ 
+public class mp3player {
+	public static void main(String[] args) throws UnsupportedAudioFileException,IOException,LineUnavailableException{
+		 Scanner scanner =new Scanner(System.in);
+	     File file=new File("allan.wav");	 
+		 
+	    AudioInputStream audioStream = AudioSystem.getAudioInputStream(file); 
+		Clip clip =AudioSystem.getClip();
+		clip.open(audioStream);
+        
+		String responce="";
+		while(!responce.equals("Q")) 
+	    	{
+			  System.out.println("P to play, S to stop ,R to reset , Q to quit and E to exit");
+			  System.out.println("enter your choice");
+			
+			  responce = scanner.next();
+			  responce =responce.toUpperCase();
+		      switch(responce) 
+		     {
+		   case("P"):clip.start();
+		   break;
+		   case("S"):
+			 
+		       clip.stop();
+		   break;
+		   case("R"):clip.setMicrosecondPosition(0);
+		   break;
+		   case("E"):clip.close();
+		   default:System.out.println("not a valid responce");
+		   }
+		}
+	}
+
+}

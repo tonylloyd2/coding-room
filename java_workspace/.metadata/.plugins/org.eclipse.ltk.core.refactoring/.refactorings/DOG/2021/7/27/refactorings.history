@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Extract local variable &apos;dog&apos; from expression &apos;new DOG()&apos;&#x0A;- Original project: &apos;DOG&apos;&#x0A;- Variable name: &apos;dog&apos;&#x0A;- Destination method: &apos;subdog.main(...)&apos;&#x0A;- Variable expression: &apos;new DOG()&apos;&#x0A;- Replace occurrences of expression with variable" description="Extract local variable &apos;dog&apos;" final="false" id="org.eclipse.jdt.ui.extract.temp" input="/src&lt;{subdog.java" name="dog" replace="true" selection="121 9" stamp="1625257576149" varType="false" version="1.0"/>
+</session>

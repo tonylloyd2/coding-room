@@ -1,0 +1,24 @@
+package music;
+
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+
+
+public class MainTest extends JFrame {
+    JLabel title;
+	public MainTest() {
+		//set the frame attributes
+		setVisible(true);
+		setLayout(null);
+		setResizable(true);
+		setSize(500,500);
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+		
+		//set the frame components
+		title = new JLabel(" Register");
+		title.setBounds(100, 10, 80, 20);
+
+         add(title);		
+	}
+
+}

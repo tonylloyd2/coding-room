@@ -1,0 +1,17 @@
+/**
+ * 
+ */
+package files;
+
+import java.io.File;
+
+//  @author lloyd
+ public class File_Methods {
+ 
+	public static void main(String[] args) {
+       File file1 = new File ( " /home/lloyd/Videos");
+       System.out.println(file1);
+
+	}
+
+}

@@ -1,0 +1,20 @@
+/**
+ * 
+ */
+package files;
+
+/**
+ * @author lloyd
+ *
+ */
+public class File_Methods {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

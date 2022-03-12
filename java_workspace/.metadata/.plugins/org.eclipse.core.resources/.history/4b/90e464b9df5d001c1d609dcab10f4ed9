@@ -1,0 +1,43 @@
+/**
+ * 
+ */
+package file_Reader;
+
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+/**
+ * @author lloyd
+ *
+ */
+import java.util.*;
+class File_Reader {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+	 try {  
+		    Scanner scanner = new Scanner(System.in);
+			Scanner filereader = new Scanner(new FileReader("testfile.txt"));
+			System.out.println("enter name ");
+			String name = scanner.nextLine();
+			name = filereader.next();
+			System.out.println("enter company name ");
+			String comName = scanner.next();
+			comName = filereader.next();
+    		System.out.println("Enter salary ");
+		    int salary = scanner.nextInt();
+            salary = filereader.nextInt();
+			 System.out.println("name = " + name +"  \ncompany  name = "+comName +"  \nsalary = "+salary);
+			 scanner.close();
+			 filereader.close();
+			
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+//			e.printStackTrace();
+			System.out.println("the file was not found");
+		}
+		
+	}
+
+}

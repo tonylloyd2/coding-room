@@ -1,0 +1,36 @@
+
+package exercise;
+
+import java.util.*;
+
+// * @author lloyd
+public class Exercise8 {
+ 	public static void main(String[] args) {
+     Scanner scanner = new Scanner(System.in);
+ 		System.out.println("Enter the number of rows and columns");
+ 		int rows = scanner.nextInt();
+ 		int column = scanner.nextInt();
+ 		
+ 		int [][] array = new int [rows][column];
+ 		int sum = 0,sum1=0;
+ 		 for (int i = 0 ; i < rows; i++) {
+ 			 for (int j = 0; j < column; j++) {
+ 	          System.out.print("Enter number"+(j+1)+" for  column"+(j+1)+" and row"+(i+1)+" : ");
+ 				array[i][j] = scanner.nextInt();  
+ 			 }
+ 		 }
+ 		 System.out.println(Arrays.deepToString(array));
+ 		 for (int i = 0 ; i < rows; i++) {
+ 			 for (int j = 0; j < column; j++) {
+ 				sum += array[0][j];
+ 			    sum1 += array[i][0];
+ 			 }
+ 		 System.out.print("sum of row"+(i+1)+" = "+sum+ " sum of column"+(i+1)+" = "+sum1);
+ 		 System.out.println(); 
+ 		 
+ 		 }
+ 		 
+ 		 
+	}
+
+}

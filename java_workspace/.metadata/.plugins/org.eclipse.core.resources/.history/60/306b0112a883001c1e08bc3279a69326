@@ -1,0 +1,12 @@
+/**
+ * 
+ */
+package sudoku;
+
+/**
+ * @author lloyd
+ *
+ */
+public class Coordinates {
+
+}

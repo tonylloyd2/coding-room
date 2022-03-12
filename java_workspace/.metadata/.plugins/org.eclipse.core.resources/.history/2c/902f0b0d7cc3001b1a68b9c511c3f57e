@@ -1,0 +1,33 @@
+/**
+ * 
+ */
+package ArrayStudents;
+import java.util.Scanner;
+/**
+ * @author ccs/00033/020
+ * Oduor stanley
+ *
+ */
+public class Credentials {
+	
+	public static void main(String[] args) {
+		Scanner keyIn = new Scanner(System.in);
+		double[]studentMarks= new double[3];
+        String[]studentName=new String[3];
+        
+        for(int j=0;j<studentName.length;j++) {
+        	
+        System.out.println("The name of the student");
+        String text= keyIn.nextLine();
+        studentName[j]= text;
+      for(int i=0;i==j;i++)  {
+        System.out.println("Enter the student marks");
+        double marks=keyIn.nextDouble();
+        studentMarks[j]=marks;}
+        
+        System.out.println("NAME:"+studentName +"" +"SCORE:"+ " " +studentMarks);
+        
+        }
+        	
+	}
+}

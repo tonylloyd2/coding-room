@@ -1,0 +1,5 @@
+INDEX VERSION 1.131+/home/lloyd/eclipse-workspace/weather/.metadata/.plugins/org.eclipse.jdt.core
+1017193031.index
+1865797976.index
+646308851.index
+538316778.index

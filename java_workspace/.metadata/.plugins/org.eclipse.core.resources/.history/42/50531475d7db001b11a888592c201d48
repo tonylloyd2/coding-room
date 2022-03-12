@@ -1,0 +1,42 @@
+package testTOtest;
+import java.util.Scanner;
+public class trial1 {
+	 
+	 	public static void main(String[] args) {
+	   Scanner scan = new Scanner(System.in);
+	 	int time,distance,enginecapacity,year;
+	 	  String color1,make1,cartype;
+	 	/*private String name,color, cargo,make,license;
+	 	private int capacity,wheels,passengers;
+	 	protected int mileage;
+	 	private int yearOfMake;
+	 	private int speed;
+	 	protected int enginecapacity;*/
+	 			 
+	 		 	
+	 			System.out.println("driving hours per day");
+	 			 time=scan.nextInt();
+ 	 	        System.out.println("average distance of the drive");
+	 	         distance=scan.nextInt();
+	 	        System.out.println("enter year of make");
+	 	         year=scan.nextInt();
+	 	        System.out.println("specify if the vehicle is a  lorry or car");
+	 			 cartype=scan.nextLine();
+	 	         scan.nextLine();
+	 	  if (cartype=="car") 
+	 	  {
+	 		  System.out.println("enter the color");
+	 	        color1=scan.nextLine();
+	 	        System.out.println("enter the make-type of the vehicle");
+	 	         make1=scan.nextLine();
+	 	   }
+	 	  else if (cartype=="lorry") 
+	 	  {
+	 	        System.out.println("enter the engine capacity");
+	 	        enginecapacity=scan.nextInt();
+	 	        }
+	      }
+	    }
+
+
+

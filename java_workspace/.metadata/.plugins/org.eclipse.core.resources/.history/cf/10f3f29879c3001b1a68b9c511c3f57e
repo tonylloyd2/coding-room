@@ -1,0 +1,18 @@
+/**
+ * 
+ */
+package ArrayStudents;
+
+/**
+ * @author ccs/00033/020
+ * Oduor stanley
+ *
+ */
+public class Credentials {
+	
+	public static void main(String[] args) {
+		Scanner keyIn =
+
+	}
+
+}

@@ -1,0 +1,20 @@
+/**
+ * 
+ */
+package lucky_number;
+
+/**
+ * @author lloyd
+ *
+ */
+public class LuckyNumber {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

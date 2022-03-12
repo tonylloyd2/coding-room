@@ -1,0 +1,76 @@
+html {
+	font-family:  comic sans ms;
+	background-image: url(images/blue.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+header {
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+h1{
+	text-align: center;
+	color: darkgreen;
+}
+
+.sign-up{
+	text-align: center;
+	transition: 0.5s;
+}
+
+.sign-up hr{
+	width: 90%;
+	margin: auto;
+	padding: 5px;
+	background: green;
+	border: none;
+}
+
+.sign-up input{
+	width: 60%;
+	padding: 0.1rem;
+	margin: 10px 0px;
+	border: none;
+	border-bottom: 0.5px solid #5F5FB0;
+	font-size: 1.05rem;
+	outline: none;
+	background: transparent;
+	text-align: center;
+	transition: 0.5s;
+}
+
+.sign-up label{
+	font-size: 1.5rem;
+	color: green;
+}
+
+.sign-up button {
+	padding: 0.8rem 2.8rem;
+	font-size: 1.1rem;
+	background: #5F5FB0;
+	border: none;
+	color: white;
+	border-radius: 30px;
+	outline: none;
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+.sign-up button:hover{
+	transform: scale(1.2);
+}
+
+.sign-up input:hover{
+	transform: scale(1.2);
+}
+
+.sign-up input[type=text]:focus, input[type=password]:focus, input[type=text]:focus {
+  background-color: transparent;
+  outline: none;
+}

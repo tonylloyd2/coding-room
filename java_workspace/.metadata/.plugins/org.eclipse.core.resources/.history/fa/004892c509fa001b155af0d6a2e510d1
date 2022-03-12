@@ -1,0 +1,44 @@
+package music;
+import java.io.*;
+import java.util.*;
+import javax.sound.sampled.*;
+ 
+public class mp3player {
+	@SuppressWarnings("unused")
+	public static void main(String[] args) throws UnsupportedAudioFileException,IOException,LineUnavailableException{
+		 @SuppressWarnings("resource")
+		Scanner scanner =new Scanner(System.in);
+	     File file=new File("allan.wav", "2.wav");
+	     Random random =new Random();
+		AudioInputStream audioStream = AudioSystem.getAudioInputStream(file); 
+		Clip clip =AudioSystem.getClip();
+		clip.open(audioStream);
+        String responce="";		
+		responce =responce.toUpperCase();
+		 
+        while(!responce.equals("Q")) 
+	    	{
+			  System.out.println("P to play, S to stop ,R to reset and Q to quit ");
+			  System.out.println("enter your choice");	
+			  responce = scanner.next();
+              responce=responce.toUpperCase();
+		      switch(responce) 
+		     {
+		   case("P"):clip.start();
+		   break;
+		   case("S"):clip.stop();System.out.print("you've paused the music");
+		   System.out.println();
+		   break;
+		   case("Q"):clip.close();System.out.println("you've quit the music");
+		   break;
+		   case("R"):clip.setMicrosecondPosition(0);
+		   break;
+		   case("l"): clip.setLoopPoints(0,20);
+
+		   //case("f"):clip.setLoopPoints(2, 3);break;
+		   // default:System.out.println("not a valid responce");
+		   } }
+		}
+	}
+
+

@@ -1,0 +1,15 @@
+ package array;
+ 
+public class forlooparrayfornames {
+ 
+	public static void main(String[] args) {
+String names[]= {"hdwed","ytuer","jnrgi","efbu","nirbvie"};		 
+int i;
+   for(i=0;i<5;i++) 
+   { 
+	 System.out.println(names[i]);  
+   }
+		System.out.println();
+	}
+
+}

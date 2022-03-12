@@ -1,0 +1,68 @@
+package music;
+
+import java.io.IOException;
+
+import javax.sound.sampled.LineUnavailableException;
+import javax.sound.sampled.UnsupportedAudioFileException;
+import javax.swing.BorderFactory;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.border.Border;
+import javax.swing.plaf.ColorChooserUI;
+
+import org.w3c.dom.css.RGBColor;
+import java.awt.*;
+
+public class MainTest extends JFrame  {
+    JLabel title;
+    JButton play_or_pause,loop,reset,quit;
+    Panel panel;
+    JLabel container_label;
+	Border border = BorderFactory.createLineBorder(Color.green,4);
+	public MainTest() {
+		//set the frame attributes
+		setVisible(true);
+		setLayout(null);
+		setResizable(true);
+		setSize(800,800);
+	
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+		//border 
+ 		
+		
+		//set the frame components
+		title = new JLabel("Simple mp3");
+		title.setBounds(300, 0, 300, 20);
+		title.setFont(new Font("Lucida Calligraphy",Font.BOLD,20));
+		//setting up buttons
+		play_or_pause = new JButton("play / pause");
+		play_or_pause.setBackground(Color.blue);
+	    play_or_pause.setBounds(300,100,50,50);
+		play_or_pause.setFont(new Font("Lucida Calligraphy",Font.BOLD,20));
+    
+		// set  panel
+		panel = new Panel();
+		
+		//set label
+//		container_label = new JLabel();
+//		container_label.setBounds(0,30,70,600);
+//		container_label.setBackground(Color.cyan);
+//		container_label.setBorder(border);
+//		add items to label container
+//		container_label.add(play_or_pause);
+		
+		
+		
+		//add items to the frame
+	   	add(play_or_pause);
+//		 add(container_label);
+         add(title);	
+         add(panel);
+	}
+	public static void main(String[] args) throws UnsupportedAudioFileException,IOException,LineUnavailableException{
+		MainTest obj  = new MainTest();
+	}
+
+}

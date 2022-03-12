@@ -1,0 +1,25 @@
+package timeconversion;
+
+import java.util.Scanner;
+
+public class Timeconversion {
+ 
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+int seconds,minutes,hours,time;
+Scanner scanner=new Scanner(System.in);
+  
+  System.out.println("enter the number of seconds to convert");
+  time = scanner.nextInt();
+  if (time%60==0 && time%3600==0) 
+  {
+	 System.out.printf("hours= %d  minutes= %d  seconds= %d " ,time/3600,time/60,time%60  );
+  }
+
+
+		
+		
+		
+	}
+
+}

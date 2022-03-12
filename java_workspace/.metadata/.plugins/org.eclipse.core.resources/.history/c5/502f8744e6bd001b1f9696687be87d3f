@@ -1,0 +1,33 @@
+/**
+ * 
+ */
+package tyere;
+
+/**
+ * @author lloyd
+ *
+ */
+import java.util.Scanner;
+public class trggq {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+	 int num1,num2;
+	 Scanner scan = new Scanner(System.in);
+	 System.out.println("enter number 1");
+	 num1 = scan.nextInt();
+	 System.out.println("enter number 2");
+	 num2 = scan.nextInt();
+
+
+	}
+	
+	public int addnumbers (int a,int b)
+	
+	return a+b;
+}}
+
+
+

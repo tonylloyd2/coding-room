@@ -1,0 +1,37 @@
+import java.util.Scanner;
+public class lloyd {
+	public static void main(String[] args) {
+		
+	Scanner scanner = new Scanner(System.in);
+		System.out.println("Enter Your Marks");
+		
+		double marks = scanner.nextDouble();
+		
+		if(marks >=70)
+		{ 
+		     String grade = "A";
+			System.out.println(grade);
+		}
+		
+	 
+}
+	
+	public double getGrade(double marks) {
+	String grade;
+		if(marks >=70)
+		{ 
+		     grade = "A";
+			System.out.println(grade);
+		}
+		
+		
+		
+		return marks;
+		
+	}
+		
+		
+		}
+	
+
+

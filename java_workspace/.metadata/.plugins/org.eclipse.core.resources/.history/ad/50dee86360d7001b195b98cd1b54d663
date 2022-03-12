@@ -1,0 +1,16 @@
+
+public class subdog {
+
+	public static void main(String[] args) {
+ 
+		DOG d1=new DOG(null, null);
+		d1.setBreed("modern");
+		d1.setName("rex");
+		System.out.println(d1.getBreed()+" "+d1.getName());
+		DOG d2 = new DOG(null,null);
+		 d2.setBreed("tradition");
+		 d2.setName("clue");
+		 System.out.println(d2.getBreed()+" "+d2.getName());
+	}
+
+}

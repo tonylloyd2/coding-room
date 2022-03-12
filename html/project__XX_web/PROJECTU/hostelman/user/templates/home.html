@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+  <div>
+  {% if user.is_authenticated %}
+  <h2>  Hi {{ user}}! </h2>
+  {%  endif %}
+  <p>{{ msg }}</p><br>
+  <form method="POST" roomsurl=" {% url 'ChangeRooms' %}"  id="bookingForm">
+  <input type="email" name="email" value="{{ user.email}}" hidden>
+  {% csrf_token %}
+  <label>HOSTEL:</label>
+  <select style="width:150px;margin-right:10px;border-radius:3px;border:solid black;"  name="hostel_name"  id="hostel">
+  {%  for hostel in hostels %}
+  <option value="{{ hostel.hostel_name }}">{{hostel.hostel_name}}</option>
+  {%  endfor %}
+  </select>
+  <label>ROOM:</label>
+  <select name="room_no" id="room" style="border-radius:3px;border:solid black;">
+   {%  for room in rooms %}
+  <option value="{{ room.room_no }}">{{ room.room_no }}</option>
+  {%  empty %}
+  <option>No rooms available</option>
+  {%  endfor %}
+  </select>
+  <br>
+{% if user.is_authenticated %}
+  <input style="margin-top: 10px;border-radius:7px;background-color:green;" type="submit" value="Book Now">
+  {% else %}
+    <input style="margin-top: 10px;border-radius:7px;background-color:green;" type="submit" value="Book Now" disabled>
+  </form>
+  
+  Please login first
+  {% endif %}
+  </form>  
+  </div> 
+  
+  <script>
+    $("#hostel").change(function () {
+      var url = $("#bookingForm").attr("roomsurl");
+      var hostel_name = $(this).val(); 
+      $.ajax({
+        url: url, 
+        data: {
+          'hostel_name':hostel_name
+        },
+        success: function (data) {
+        let html_data ;
+                data.forEach(function (data) {
+                    html_data += `<option value="${data.room_no}">${data.room_no}</option>`
+                });
+          $("#room").html(html_data); 
+        }
+      });
+
+    });
+  </script>  
+{% endblock %}

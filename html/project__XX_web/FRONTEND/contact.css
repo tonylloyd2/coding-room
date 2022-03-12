@@ -1,0 +1,44 @@
+body{
+	background: fixed no-repeat url(images/blue.jpg);
+}
+
+h1{
+	color: darkred;
+	text-align: center;
+}
+
+.contact{
+	text-align: center;
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	margin-top: 10%;
+}
+
+.contact input{
+	width: auto;
+	text-align: center;
+	padding: 0.7rem;
+	margin: 10px 0px;
+	border: none;
+	border-bottom: 2px solid #5F5FB0;
+	font-size: 1.1rem;
+	outline: none;
+	background: transparent;
+	transition: 0.5s;
+}
+
+.contact label{
+	font-size: 1.5rem;
+	color: maroon;
+	font-family: serif;
+}
+
+.contact button{
+	padding: 0.2rem 1.4rem;
+	font-size: 1rem;
+	border: none;
+	border-radius: 40px;
+	outline: none;
+	cursor: pointer;
+}
