@@ -32,6 +32,7 @@ let uname;
 // document.writeln(a)
 
 //USING THE CONSTANT
+
 //AREA OF CIRCLE
 // const pi = Number(3.14);
 // let radius = window.prompt(" radius : ")
@@ -76,6 +77,58 @@ let uname;
 
 
 // COUNTER PROGRAM USING JS
+// let counter_number = 0
+// counter_number = Number(counter_number)
+// document.getElementById("++").onclick = function(){
+//     counter_number += 1  
+//     document.getElementById("number").innerHTML = " <h1>"+ counter_number + " </h1>"
+// }
+// document.getElementById("00").onclick = function(){
+//     counter_number = 0
+//     document.getElementById("number").innerHTML = " <h1>"+ counter_number + " </h1>"
+// }
+// document.getElementById("--").onclick = function(){
+//     counter_number -= 1  
+//     document.getElementById("number").innerHTML = " <h1>"+ counter_number + " </h1>"
+// }
+
+// MATH RANDOM FUNCTION
+//  let x  = Math.floor(Math.random() * 5 ) + 1  // random numbers from 1-5
+// console.log(x)
+
+
+// STRING PROPERTIES AND METHODS
+
+// uname = "  lloyd tony  ";
+// let number = "123-345-677";
+// console.log(uname.length);//gets lenht inclusive of spaces
+// console.log(uname.charAt(0));//gets the character at index
+// console.log(uname.indexOf("t"));
+// console.log(uname.lastIndexOf("o"));
+
+// console.log(uname.trim()); // rm spaces b4 and after
+// console.log(uname.toLowerCase());
+// console.log(uname.toUpperCase());
+
+// console.log(number.replace( "-" , "/")); // - to /
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
