@@ -5,7 +5,6 @@ student_scores = {
     "David":34,
     "Daniel":77,
     "Oneuil":61,
-
 }
 student_grades = {} 
 
