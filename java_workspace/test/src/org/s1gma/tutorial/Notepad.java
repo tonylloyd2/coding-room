@@ -15,7 +15,7 @@ public class Notepad extends JFrame implements ActionListener {
 
     private JMenuBar newMenubar() {
         JMenuBar menubar = new JMenuBar(); //Sets up the menubar
-        String[] titles = {"File", "test"};    // leave lol ok
+        String[] titles = {"File", "test"};    //
         String[][] elements = {
                                {"New", "Open", "Save"}, 
                                {"LOL" , " ergwer" , "erwe554"}
@@ -23,8 +23,7 @@ public class Notepad extends JFrame implements ActionListener {
         for(int i = 0; i < titles.length; i++) { // basically loops through the menu titles
             String title = titles[i]; // selects the titles from the loop
             String[] elems = elements[i];//basically finds the menuitems for the menu
-            menubar.add(newMenu(title, elems)); // adds a new menu with the title and elements, u understand? lhl yes ;d
-            //Okay now we add the menu to the frame and we will boot it up
+            menubar.add(newMenu(title, elems)); // adds a new menu with the title and elements
 
         }
         return menubar;//Returns the menubar ok
@@ -34,22 +33,22 @@ public class Notepad extends JFrame implements ActionListener {
      *
      * @param title The title like "File"
      * @param elements  The elements like "New", "Load", "Save"
-     * @return  returns the JMenuar
+     * @return  returns the JMenu
      */
     private JMenu newMenu(String title, String[] elements) {
-        JMenu menu = new JMenu(title); //Creates a new JMenu with the title ik
-        for(String element : elements) { //u understand?yes :d
+        JMenu menu = new JMenu(title); //Creates a new JMenu with the title
+        for(String element : elements) { //
             JMenuItem menuitem = new JMenuItem(element);//already told you about this :Pok
-            menu.add(menuitem); // uses the add method in the JMenu class for our menu to add them menuitems yh ok :d
+            menu.add(menuitem); // uses the add method in the JMenu class for our menu to add them menuitems
             menuitem.addActionListener(this);
         }
         return menu;
     }
+     
 
     private Notepad() {
-        setTitle("untitled - Notepad");  //Wanna add the title thing now? k we'll do it now
         try {
-            UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());  //basically gives it the system themeik
+            UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());// system theme
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         } catch (InstantiationException e) {
@@ -59,6 +58,7 @@ public class Notepad extends JFrame implements ActionListener {
         } catch (UnsupportedLookAndFeelException e) {
             e.printStackTrace();
         }
+        
         setSize(800, 600); 
         setJMenuBar(newMenubar());
         JScrollPane scroller = new JScrollPane(txt);//it has the txt(JTextArea) in it to select what its the container fork

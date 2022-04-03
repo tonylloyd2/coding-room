@@ -34,7 +34,7 @@ public class arrays {
 	}
 
 	private static void search_element( int element_to_be_searched) {
-  label1:		for  ( int i = 0; i < Scores.length ; i++) {
+  label1:	for  ( int i = 0; i < Scores.length ; i++) {
 			if(element_to_be_searched == Scores[i] ) {
 				System.out.println(" Element found ");
 				break;
