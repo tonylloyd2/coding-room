@@ -10,7 +10,7 @@ student_grades = {}
 
 for key in student_scores :
     score  = student_scores[key]
-    if score > 90:
+    if score > 90 :
         student_grades[key] ="Outstanding"
         print(f" {key} : {student_grades[key]}")
     elif score > 80:
