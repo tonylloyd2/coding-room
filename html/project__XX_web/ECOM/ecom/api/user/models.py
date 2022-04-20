@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import AbstractUser
+from hamcrest import none
 
 # Create your models here.
 
@@ -10,11 +11,14 @@ class CustomUser(AbstractUser):
 
     email = models.EmailField(max_length=254, unique=True)
 
+    
     username = None
 
     USERNAME_FIELD = 'email'
 
     REQUIRED_FIELDS = []
+
+    profile = models.ImageField(upload_to='images/', blank=True, null=True)
 
     phone = models.CharField(max_length=20, blank=True, null=True)
 
