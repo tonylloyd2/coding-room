@@ -115,8 +115,8 @@ let uname;
 
 
 
-
-
+// Openning a local host
+var window = window.open("localhost");
 
 
 
