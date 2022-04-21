@@ -8,7 +8,7 @@ public class mp3player  {
 	@SuppressWarnings("unused")
 	public static void main(String[] args) throws UnsupportedAudioFileException,IOException,LineUnavailableException{
 		 @SuppressWarnings("resource")
-		Scanner scanner =new Scanner(System.in);
+		 Scanner scanner =new Scanner(System.in);
 	     File file=new File("allan.wav");
 	   // Random random =new Random();
 		AudioInputStream audioStream = AudioSystem.getAudioInputStream(file); 

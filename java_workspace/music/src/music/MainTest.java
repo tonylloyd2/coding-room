@@ -50,6 +50,7 @@ public class MainTest extends JFrame  implements ActionListener {
 	
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		//border
+		
 		//instatiating objects to the file allan.wav
 		scanner =new Scanner(System.in);
 		file=new File("allan.wav");
@@ -116,9 +117,9 @@ public class MainTest extends JFrame  implements ActionListener {
 	}
 	
 	
-   public boolean play( ) {
- 			return true;
-		}
+//    public boolean play( ) {
+//  			return true;
+// 		}
 		
 	
 	

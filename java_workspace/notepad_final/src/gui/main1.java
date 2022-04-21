@@ -110,6 +110,10 @@ public class main1  extends JFrame implements ActionListener{
 				
 			}
 
+public static void main(String[] args) {
+	main1 object = new main1();
+}
+
 		}
 
 	 

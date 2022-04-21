@@ -17,11 +17,11 @@ public class PrimenNumbers {
 	}
 public static boolean isPrime(int n) {
  for (int i = 2; i<=n/2 ; i++) {
-	 if(n % i == 0) 
+	if(n % i == 0) 
 		 //continue;
-	 return false;
+	    return false;
 	  }
-  return true;
+    return true;
 	}
 public static void printPrimeBtwn(int start ,int end) {
 	int sum=0;

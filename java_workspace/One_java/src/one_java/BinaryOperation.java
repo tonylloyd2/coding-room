@@ -18,15 +18,15 @@ public class BinaryOperation {
 
 			if ( user_responce.isEmpty() == false){
 				break;
-	       }
-		   else if ( user_responce.isEmpty() == true){    
+	         }
+		    else if ( user_responce.isEmpty() == true){    
 			  
-	       System.out.println("enter first Binary number");
-	       String binary1 = scanner.next();
-	       System.out.println("enter second Binary number");
-	       String binary2 = scanner.next();
-	       System.out.println("Enter the operation to be done");
-	       char operation = scanner.next().charAt(0);
+				System.out.println("enter first Binary number");
+				String binary1 = scanner.next();
+				System.out.println("enter second Binary number");
+				String binary2 = scanner.next();
+				System.out.println("Enter the operation to be done");
+				char operation = scanner.next().charAt(0);
 	       
 	       //scanner.close();
 	       
