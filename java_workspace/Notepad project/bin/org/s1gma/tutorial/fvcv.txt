@@ -1,0 +1,6 @@
+
+                               {"Undo" , "cut" , "copy" ,
+                               "paste","Delete" , "Find" ,
+                               "find next" , "find previous",
+                               "replace","go to","select all","time/date","font"
+                               }
