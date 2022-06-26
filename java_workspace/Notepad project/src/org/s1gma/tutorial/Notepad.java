@@ -196,10 +196,10 @@ public class Notepad extends JFrame implements ActionListener {
             area.setText(formattedDate);
          }
         else if (cmd.equals("font")) {
-            JOptionPane.showConfirmDialog(null, fontFamilyList, "Choose Font Family", JOptionPane.OK_CANCEL_OPTION, JOptionPane.PLAIN_MESSAGE);
-            fontFamily = String.valueOf(fontFamilyList.getSelectedValue());
-            newFont = new Font(fontFamily, fstyle, fsize);
-            area.setFont(newFont);
+            // JOptionPane.showConfirmDialog(null, fontFamilyList, "Choose Font Family", JOptionPane.OK_CANCEL_OPTION, JOptionPane.PLAIN_MESSAGE);
+            // fontFamily = String.valueOf(fontFamilyList.getSelectedValue());
+            // newFont = new Font(fontFamily, fstyle, fsize);
+            // area.setFont(newFont);
          }
         //VIEW
         else if (cmd.equals("zoom")) { }
