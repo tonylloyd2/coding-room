@@ -131,7 +131,7 @@ public class Notepad extends JFrame implements ActionListener {
             try {
                 //printer dialog will open
                 area.print();
-            } catch (Exception e) {
+            }catch (Exception e) {
                 e.printStackTrace();
             }
         } 
@@ -153,39 +153,39 @@ public class Notepad extends JFrame implements ActionListener {
         else if (cmd.equals("Find")) { }
         else if (cmd.equals("find next")) { }
         else if (cmd.equals("find previous")) { }
-        else if (cmd.equals("replace")) { 
-           //search for the string first
-           JFrame searchFrame = new JFrame("seach box"); 
-           searchFrame.setVisible(true);
-           searchFrame.setSize(100,50);
-           searchFrame.setLocation(100, 30);
-           searchFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-           searchFrame.setDefaultLookAndFeelDecorated(true);
-           JTextField searchtext = new JTextField("enter word to replace");
-           JButton search  = new JButton("search");
-           searchtext.setBounds(0, 0, 150, 10);
-           search.addActionListener(new ActionListener() { 
-            public void actionPerformed(ActionEvent e) { 
-             String text_replace = searchtext.getText();
-            } 
-          } );
-           searchFrame.add(searchtext);
-           searchFrame.add(search);
+        // else if (cmd.equals("replace")) { 
+        //    //search for the string first
+        //    JFrame searchFrame = new JFrame("seach box"); 
+        //    searchFrame.setVisible(true);
+        //    searchFrame.setSize(100,50);
+        //    searchFrame.setLocation(100, 30);
+        //    searchFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        //    searchFrame.setDefaultLookAndFeelDecorated(true);
+        //    JTextField searchtext = new JTextField("enter word to replace");
+        //    JButton search  = new JButton("search");
+        //    searchtext.setBounds(0, 0, 150, 10);
+        //    search.addActionListener(new ActionListener() { 
+        //     public void actionPerformed(ActionEvent e) { 
+        //      String text_replace = searchtext.getText();
+        //     } 
+        //   } );
+        //    searchFrame.add(searchtext);
+        //    searchFrame.add(search);
            
            
            
            
-            // String txt = area.getText();
-            // String txt2 = search.getText();
-            // String txt3 = replace.getText();
+        //     // String txt = area.getText();
+        //     // String txt2 = search.getText();
+        //     // String txt3 = replace.getText();
         
-            // if (txt.toLowerCase().contains(txt2.toLowerCase())) {
-            //         textArea.setText(txt.replaceAll("(?i)" + txt2, txt3));
+        //     // if (txt.toLowerCase().contains(txt2.toLowerCase())) {
+        //     //         textArea.setText(txt.replaceAll("(?i)" + txt2, txt3));
         
-            // }
-            // String text = area.getSelectedText().toString();
-            // area.replaceSelection(content);
-        }
+        //     // }
+        //     // String text = area.getSelectedText().toString();
+        //     // area.replaceSelection(content);
+        // }
         else if (cmd.equals("go to")) { }
         else if (cmd.equals("select all")) {
              area.selectAll(); }
