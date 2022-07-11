@@ -35,9 +35,8 @@ while should_game_continue:
     direction = input(" type ' encode ' to encrypt or 'decode' to  decrypt :  ").lower().strip()
     check_direction_spelling(direction)
     text = input("type your message\n").lower().strip()
-    shift = int(input( " type the shift number"))
+    shift = int(input( " type the shift number : "))
     # controlling the bigger shift number
-    
     shift = shift % 25
     Caesar(start_text=text,shift_amount=shift,cipher_direction=direction) 
 

@@ -14,7 +14,7 @@ def prime_number_checker(number):
             boolean_validater = True
             
     if boolean_validater == True:
-        print(f"{number} is a  prime number")
+        return(f"{number} is a  prime number")
     else:
         print(f"{number} is not prime  number")
 

@@ -1,7 +1,4 @@
 # when given a a random number n ...find the number of its trailing zeros ie 120 = 1 , 300 = 2
-from operator import mod
-
-
 def trailing(given_num):
     count = 0
     while given_num > 9:
