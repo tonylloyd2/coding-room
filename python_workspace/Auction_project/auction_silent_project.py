@@ -10,8 +10,6 @@ def screen_clear():
       # for windows platfrom
       _ = os.system('cls')
    # print out some text
-bid_dictionary = {}
-game_finished = False
 
 
 def check_highest_bidder(bid_dictionary):
@@ -22,8 +20,8 @@ def check_highest_bidder(bid_dictionary):
          highest_bid = bid_amount
          winner = bidder
    print(f"The winner is {winner} with a bid of {highest_bid}")
-
-
+bid_dictionary = {}
+game_finished = False
 while not game_finished:
    print (logo)
    name = input("enter your name : ").strip()
