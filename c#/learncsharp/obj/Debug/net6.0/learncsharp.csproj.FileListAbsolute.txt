@@ -1,0 +1,15 @@
+C:\Users\profiler\Documents\GitHub\coding-room\c#\learncsharp\bin\Debug\net6.0\learncsharp.exe
+C:\Users\profiler\Documents\GitHub\coding-room\c#\learncsharp\bin\Debug\net6.0\learncsharp.deps.json
+C:\Users\profiler\Documents\GitHub\coding-room\c#\learncsharp\bin\Debug\net6.0\learncsharp.runtimeconfig.json
+C:\Users\profiler\Documents\GitHub\coding-room\c#\learncsharp\bin\Debug\net6.0\learncsharp.dll
+C:\Users\profiler\Documents\GitHub\coding-room\c#\learncsharp\bin\Debug\net6.0\learncsharp.pdb
+C:\Users\profiler\Documents\GitHub\coding-room\c#\learncsharp\obj\Debug\net6.0\learncsharp.csproj.AssemblyReference.cache
+C:\Users\profiler\Documents\GitHub\coding-room\c#\learncsharp\obj\Debug\net6.0\learncsharp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\profiler\Documents\GitHub\coding-room\c#\learncsharp\obj\Debug\net6.0\learncsharp.AssemblyInfoInputs.cache
+C:\Users\profiler\Documents\GitHub\coding-room\c#\learncsharp\obj\Debug\net6.0\learncsharp.AssemblyInfo.cs
+C:\Users\profiler\Documents\GitHub\coding-room\c#\learncsharp\obj\Debug\net6.0\learncsharp.csproj.CoreCompileInputs.cache
+C:\Users\profiler\Documents\GitHub\coding-room\c#\learncsharp\obj\Debug\net6.0\learncsharp.dll
+C:\Users\profiler\Documents\GitHub\coding-room\c#\learncsharp\obj\Debug\net6.0\refint\learncsharp.dll
+C:\Users\profiler\Documents\GitHub\coding-room\c#\learncsharp\obj\Debug\net6.0\learncsharp.pdb
+C:\Users\profiler\Documents\GitHub\coding-room\c#\learncsharp\obj\Debug\net6.0\learncsharp.genruntimeconfig.cache
+C:\Users\profiler\Documents\GitHub\coding-room\c#\learncsharp\obj\Debug\net6.0\ref\learncsharp.dll

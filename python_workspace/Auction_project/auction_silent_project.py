@@ -1,6 +1,6 @@
 import os
-from art import logo
 from time import sleep
+from art import logo
 # The screen clear function
 def screen_clear():
    # for mac and linux(here, os.name is 'posix')
