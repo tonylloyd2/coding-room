@@ -1,5 +1,5 @@
 # 🚨 Don't change the code below 👇
-two_digit_number = input("Type a two digit number: ")
+# two_digit_number = input("Type a two digit number: ")
 # 🚨 Don't change the code above 👆
 
 ####################################
@@ -9,11 +9,11 @@ two_digit_number = input("Type a two digit number: ")
 # total_sum = int(num1 )+ int(num2)
 # print(total_sum)
 
-# Map each character in the string to an integer and store it as list of int with name 'digits'
-digits = map(lambda char: int(char), two_digit_number)
-# Sum all ints of the list and print the result
-print("sum of digits = ")
-print(sum(digits))
+# # Map each character in the string to an integer and store it as list of int with name 'digits'
+# digits = map(lambda char: int(char), two_digit_number)
+# # Sum all ints of the list and print the result
+# print("sum of digits = ")
+print(😂)
 
 
 

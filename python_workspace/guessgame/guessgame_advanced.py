@@ -4,7 +4,7 @@ import emoji
 # def level(level , attempt):
     
 def check_guess(user_guess , random_number , attempts , level):
-    run_out_guesses = True
+    run_out_guesses = False
     if level == "easy":
         attempts = 6
         if user_guess == random_number:
@@ -12,10 +12,13 @@ def check_guess(user_guess , random_number , attempts , level):
         else:
             attempts -= 1
             while not run_out_guesses and attempts != 0:
-                user_guess = int(input("Wrong input ****\n** you have {attempts} remaining**\n try once more guess the number : "))
+                user_guess = int(input(f"Wrong input ****\n** you have {attempts} remaining**\n try once more guess the number : "))
                 if user_guess == random_number:
                     print(f"You have won the game")
-                    run_out_guesses = False
+                    run_out_guesses = True
+                elif attempts == 0:
+                    print(f"You have lost the game")
+                    break
                 else :
                     attempts -= 1
     elif level == "hard":
@@ -25,9 +28,12 @@ def check_guess(user_guess , random_number , attempts , level):
         else:
             attempts -= 1
             while not run_out_guesses and attempts != 0:
-                user_guess = int(input("Wrong input ****\n** you have {attempts} remaining**\n try once more guess the number : "))
+                user_guess = int(input(f"Wrong input ****\n** you have {attempts} remaining**\n try once more guess the number : "))
                 if user_guess == random_number:
                     print(f"You have won the game")
+                    break
+                elif attempts == 0:
+                    print(f"You have lost the game")
                     break
                 else :
                     attempts -= 1
