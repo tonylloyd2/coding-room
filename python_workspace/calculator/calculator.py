@@ -38,8 +38,7 @@ def screen_clear():
       # for windows platfrom
       _ = os.system('cls')
 def quit(user_answer):
-    if user_answer == 'q':
-        
+    if user_answer == 'q': 
         return False
     else:
         return True
