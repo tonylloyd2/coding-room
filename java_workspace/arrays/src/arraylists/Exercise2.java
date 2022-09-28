@@ -31,7 +31,7 @@ import java.util.*;
         else if (choice == 3 ) {
         	display();
 			System.err.println("null");
-			System.out.println(integer_user.getFirst());
+			System.out.println(integer_user);
 			 
         }
         else if ( choice > 4) {
