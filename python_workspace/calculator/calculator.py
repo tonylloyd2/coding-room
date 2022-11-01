@@ -63,7 +63,7 @@ def calculator():
         calculation_function = operations[operation_symbol]
         answer = calculation_function(number1,number2)
         print("\n\nthinking...")
-        sleep(3)
+        sleep(2)
         screen_clear()
         print(logo) 
         print(f"\nwell here's your answer fella (: \n\n {number1} {operation_symbol} {number2} = {answer} \n\n")
