@@ -1,7 +1,8 @@
 package studentLogin;
-
+import studentLogin.Register;
 import javax.swing.*;
 
+@SuppressWarnings("unused")
 public class HomePage extends JFrame 
 {
 	private static final long serialVersionUID = 1L;
@@ -15,7 +16,7 @@ public class HomePage extends JFrame
         
         details = new JTextArea();
         details.setBounds(10, 10, 150, 60);
-        details.setText("NAME:"+username+"\n\nADM NO:"+admno);
+        details.setText("NAME: "+username+"\n\nADM NO: "+admno);
         
         
         

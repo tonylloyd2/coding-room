@@ -10,7 +10,7 @@ public class InFile {
     public static void main(String[] args) throws FileNotFoundException {
       try 
       {
-          Scanner inFile = new Scanner (  new FileReader ("E:/lloyd.txt"));
+          Scanner inFile = new Scanner (  new FileReader ("E:/testfile.txt"));
          
         System.out.println(inFile.nextLine());
         System.out.println(inFile.nextLine());

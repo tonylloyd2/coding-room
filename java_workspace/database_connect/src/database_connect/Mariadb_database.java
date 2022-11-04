@@ -11,8 +11,8 @@ import java.util.Scanner;
  */
 class Mariadb_database {
     
-   	 final static String url = "jdbc:mariadb://localhost/Maseno";
-     final static  String password = "0220";
+   	 final static String url = "jdbc:mysql://localhost/Maseno";
+     final static  String password = "0909";
      final static String username = "root"; 
      
 	@SuppressWarnings({ "unused", "resource" })

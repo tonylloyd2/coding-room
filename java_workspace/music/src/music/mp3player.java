@@ -2,11 +2,12 @@ package music;
 
 import java.io.*;
 import java.util.*;
+
 import javax.sound.sampled.*;
  
 public class mp3player  {
 	@SuppressWarnings("unused")
-	public static void main(String[] args) throws UnsupportedAudioFileException,IOException,LineUnavailableException{
+	public static void main(String[] args) throws UnsupportedAudioFileException, IOException, LineUnavailableException { 
 		 @SuppressWarnings("resource")
 		 Scanner scanner =new Scanner(System.in);
 	     File file=new File("allan.wav");

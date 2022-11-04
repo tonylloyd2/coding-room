@@ -1,11 +1,5 @@
-/**
- * 
- */
 package file_Reader;
-
-  
 import java.io.*;
- 
 import java.util.*;
 class File_Reader {
 

@@ -3,7 +3,6 @@ package music;
 import java.io.File;
 import java.io.IOException;
 import java.util.Scanner;
-
 import javax.sound.sampled.AudioInputStream;
 import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.Clip;
@@ -14,7 +13,6 @@ import javax.swing.border.Border;
 import javax.swing.event.AncestorEvent;
 import javax.swing.event.AncestorListener;
 import javax.swing.plaf.ColorChooserUI;
-
 import org.w3c.dom.css.RGBColor;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -115,15 +113,6 @@ public class MainTest extends JFrame  implements ActionListener {
          add(title);	
          add(panel);
 	}
-	
-	
-//    public boolean play( ) {
-//  			return true;
-// 		}
-		
-	
-	
-
 
 			//	event handling in java
 	public void actionPerformed(ActionEvent onclick_event) {
@@ -135,7 +124,6 @@ public class MainTest extends JFrame  implements ActionListener {
     		   clip.close();
     		   setDefaultCloseOperation(EXIT_ON_CLOSE);
 
-		 		 
 			}
     	   if(onclick_event.getSource().equals(play_or_pause)) {
 				clip.start();System.out.println("playing");
@@ -148,7 +136,6 @@ public class MainTest extends JFrame  implements ActionListener {
     		   
     	   }
     	   
-		  
 		   if (onclick_event.getSource().equals(loop) ) {
 				
 				JOptionPane.showMessageDialog(null," please in put the number of time to loop then press loop"," having a problem to loop",JOptionPane.INFORMATION_MESSAGE);

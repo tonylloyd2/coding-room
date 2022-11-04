@@ -12,18 +12,6 @@ import java.time.format.DateTimeFormatter;
  */
 public class Notepad extends JFrame implements ActionListener {
     private JTextArea area = new JTextArea(); 
-    // private JMenuItem fontfamily = new JMenuItem();
-    // //Creating MenuItem "Font Style"
-    // private JMenuItem fontstyle = new JMenuItem();
-    // //Creating MenuItem "Font Size" in Java Text Editor
-    // private JMenuItem fontsize = new JMenuItem();
-    // //Creating List of Font Family and assigning the list values
-    // private JList familylist = new JList();
-    // //Creating List of Font Styles and assigning the list values
-    // private JList stylelist = new JList();
-    // //Creating List of Font Size and assigning the list values
-    // private JList sizelist = new JList();
-    // //Allowing user to select only one option
     
     private JMenuBar newMenubar() {
         JMenuBar menubar = new JMenuBar(); //Sets up the menubar
