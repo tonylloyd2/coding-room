@@ -23,6 +23,9 @@ public class HomePage extends JFrame
         add(details);
 		
 	}
-
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+     new HomePage("lloyd", "sgsgsd");
+	}
 	
 }

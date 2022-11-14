@@ -28,6 +28,8 @@ public class SimpleCompiler
 
 	public static final String APP_NAME = "Simple Compiler Version 1.0";
 
+	
+
 	protected JTextArea m_editor;
 	protected JTextArea errorMsg;
 	
@@ -172,7 +174,7 @@ public class SimpleCompiler
 		Action actionPrint = new AbstractAction("Print...", iconPrint) {
 			public void actionPerformed(ActionEvent e) {
 				
-//				Print.printComponent((m_editor));
+				Print.printComponent((m_editor));
 			}
 		};
            
@@ -193,7 +195,7 @@ ImageIcon iconAbout = new ImageIcon("icons/help.gif");
 		Action actionAbout = new AbstractAction("About ?", iconAbout) {
 			public void actionPerformed(ActionEvent e) {
 				
-//				JOptionPane.showMessageDialog(null, new About(),"About Simple Compiler",JOptionPane.PLAIN_MESSAGE);
+				JOptionPane.showMessageDialog(null, new About(),"About Simple Compiler",JOptionPane.PLAIN_MESSAGE);
 			}
 		};
            
@@ -414,30 +416,29 @@ class SmallButton extends JButton implements MouseListener {
 
     public void pile( )
        {
-		errorMsg.setText("save the file before  compilation");
-		
-//        	StringTokenizer st=new StringTokenizer(m_editor.getText());
-//	 	String akhir=new String();
-//	 
-//         	errorMsg.append("Compiling 1 file.....\n");
-//
-//
-//		String mula=new String(st.nextToken());
-//  
-//       		if(mula.equals("Start"))
-//  		 {
-// 
-//             	   while (st.hasMoreTokens())
-//		     {
-//		      akhir=st.nextToken();
-//                     }
-//            	 if(akhir.equals("End"))
-//		     DecState(m_editor.getText());
-//	    	 else
-//		   errorMsg.append("ERROR Missing End statement\n");
-//                 }             
-//     		else
-//	          errorMsg.append("ERROR Missing Start statement\n");
+		errorMsg.setText("");
+        	StringTokenizer st=new StringTokenizer(m_editor.getText());
+	 	String akhir=new String();
+	 
+         	errorMsg.append("Compiling 1 file.....\n");
+
+
+		String mula=new String(st.nextToken());
+  
+       		if(mula.equals("Start"))
+  		 {
+ 
+             	   while (st.hasMoreTokens())
+		     {
+		      akhir=st.nextToken();
+                     }
+            	 if(akhir.equals("End"))
+		     DecState(m_editor.getText());
+	    	 else
+		   errorMsg.append("ERROR Missing End statement\n");
+                 }             
+     		else
+	          errorMsg.append("ERROR Missing Start statement\n");
 
 
        }  
