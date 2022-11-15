@@ -1,0 +1,3 @@
+java Prolog.java
+
+pause

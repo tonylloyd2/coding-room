@@ -37,6 +37,7 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\Users\lloyd\Documents\Coding mania\coding-room\java_workspace"/>
 			<item value="/home/lloyd/eclipse-workspace/inFile"/>
 			<item value="/home/lloyd/eclipse-workspace"/>
 			<item value="/home/lloyd/eclipse-workspace/studentLogin"/>

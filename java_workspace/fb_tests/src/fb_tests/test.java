@@ -14,9 +14,9 @@ public class test {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-   Methods_test object = new Main();
-   object.getDetails();
-		
+//   Methods_test object = new Main();
+//   object.getDetails();
+		System.out.println(61 % 60);
 		
 	}
 
