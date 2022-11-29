@@ -45,4 +45,7 @@
     <fullyQualifiedTypeName name="music.MainTest"/>
     <fullyQualifiedTypeName name="com.sun.org.apache.bcel.internal.generic.IF_ACMPEQ"/>
     <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="org.jpl7.Query"/>
+    <fullyQualifiedTypeName name="org.jpl7.JPL"/>
+    <fullyQualifiedTypeName name="org.jpl7.fli.qid_t"/>
 </qualifiedTypeNameHistroy>

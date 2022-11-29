@@ -1,3 +1,5 @@
+
+
 import java.awt.*;
 import java.awt.event.*;
 import java.io.*;
@@ -9,14 +11,15 @@ import javax.swing.border.*;
 import javax.swing.event.*;
 
 public class SimpleCompiler
-	extends JFrame {
+	extends JFrame   {
 
 	public static final String APP_NAME = "Simple Compiler Version 1.0";
 
 	
-
+	protected String user_text_code;
 	protected JTextArea m_editor;
 	protected JTextArea errorMsg;
+	
 	
 
 	protected JFileChooser m_chooser;
@@ -86,7 +89,7 @@ public class SimpleCompiler
 			KeyEvent.VK_N, InputEvent.CTRL_MASK));
 		mFile.add(item);
 
-		ImageIcon iconOpen = new ImageIcon("icons/open.gif");
+		ImageIcon iconOpen = new ImageIcon("icons/Open.gif");
 		Action actionOpen = new AbstractAction("Open...", iconOpen) {
 			public void actionPerformed(ActionEvent e) {
 				if (!promptToSave())
@@ -143,8 +146,42 @@ public class SimpleCompiler
     ImageIcon iconCompile = new ImageIcon("icons/compile.gif");
 		Action actionCompile = new AbstractAction("Compile File...", iconCompile) {
 			public void actionPerformed(ActionEvent e) {
-				status="ok";
-				pile();
+				// status="ok";
+				// // pile();\
+				user_text_code = m_editor.getText();
+				if(user_text_code.isBlank() ){//check if file contains code
+                    errorMsg.setText("cannot compile an empty file !!!");
+				}
+				else{//file has some code in it proceeding to compile
+					errorMsg.setText("compiling...");
+					try {
+						Scanner filereader = new Scanner(new FileReader("run.java"));
+						// while(filereader.hasNextLine() == true) {
+						// 	System.out.println(filereader.nextLine());		  
+						//   }
+						PrintWriter write = new PrintWriter("run.java");
+						write.append(user_text_code);
+						write.close();
+						filereader.close();	
+
+						String[] command = {
+							"cmd.exe",
+							 "/C",
+							 "Start",
+							 "run.bat"
+							};
+                        Process p =  Runtime.getRuntime().exec(command); 
+						// System.out.println(p.getText());
+						//proceed to execute the batch file
+						errorMsg.append("file compiled successfully..");
+					} catch (Exception file_exception_error) {
+						file_exception_error.printStackTrace();
+					}
+					
+					
+				}
+
+
 				
 			}
 		};
@@ -166,6 +203,7 @@ public class SimpleCompiler
                  item = new JMenuItem(actionPrint);
 		item.setMnemonic('P');
 		
+
 		mOpt.add(item);
 
 
@@ -188,16 +226,6 @@ ImageIcon iconAbout = new ImageIcon("icons/help.gif");
 
                 mHelp.add(item);
 		menuBar.add(mHelp);
-
-
-
-
-		
-
-
-
-
-
 
 		// Create toolbar
 		m_toolBar = new JToolBar("Commands");

@@ -1,3 +1,2 @@
-java SimpleCompiler.java 
-
+java run.java
 pause
