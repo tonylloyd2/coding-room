@@ -4,5 +4,9 @@
 			"path": "."
 		}
 	],
-	"settings": {}
+	"settings": {
+		"dataworkspace.excludedProjects": [
+			"painter game/blog/blog.sqlproj"
+		]
+	}
 }
