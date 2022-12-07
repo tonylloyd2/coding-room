@@ -18,6 +18,7 @@ class MyGui:
         self.checkbox= tk.Checkbutton(self.window , text="show Messagebox" , font=("Arial" , 16)  , variable = self.check_state)
         self.checkbox.pack(padx=10 , pady=10)
 
+
         self.button = tk.Button(self.window , command=self.show_message,  text="show message" , font=('Arial' , 18))
         self.button.pack(padx=10 , pady=10)
 
