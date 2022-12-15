@@ -4,24 +4,5 @@
 			"path": "."
 		}
 	],
-	"settings": {
-		"dataworkspace.excludedProjects": [
-			"painter game/blog/blog.sqlproj"
-		],
-		"sqltools.connections": [
-			{
-				"mysqlOptions": {
-					"authProtocol": "default"
-				},
-				"previewLimit": 50,
-				"server": "localhost",
-				"port": 3306,
-				"askForPassword": true,
-				"driver": "MariaDB",
-				"name": "srg",
-				"username": "root",
-				"database": "house_rental"
-			}
-		]
-	}
+	"settings": {}
 }

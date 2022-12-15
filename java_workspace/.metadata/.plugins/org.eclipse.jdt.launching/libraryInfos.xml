@@ -2,5 +2,5 @@
 <libraryInfos>
     <libraryInfo home="/usr/lib/jvm/jdk-17.0.2" version="17.0.2"/>
     <libraryInfo home="/home/lloyd/Documents/jdk-16.0.2_linux-x64_bin/usr/lib/jvm/jdk-16.0.2" version="16.0.2"/>
-    <libraryInfo home="C:\Program Files\Java\jdk-19" version="19"/>
+    <libraryInfo home="C:\Program Files\Java\jdk-19" version="19.0.1"/>
 </libraryInfos>

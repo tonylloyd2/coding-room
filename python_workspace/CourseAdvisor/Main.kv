@@ -1,0 +1,78 @@
+WindowManager:
+    id:ScreenManager
+    MainScreen:
+        id:MainScreen
+    ResultScreen:
+        id:ResultScreen
+
+<ResultScreen>:
+    name:"ResultScreen"
+    MDBoxLayout:
+        orientation: "vertical"
+        MDTopAppBar:
+            title: "Course Selection Program"
+            left_action_items:[['menu',lambda x:app.navigation_draw()]]
+            right_action_items:[['logout',lambda x:app.navigation_draw()]]
+            elavation:10
+            md_bg_color:0,0,100/255,1
+        MDBoxLayout:
+            padding:10
+            MDLabel:
+                id:course_text
+                text:""
+                halign:"center"
+                font_style:"H4"
+
+<MainScreen>:
+    name:"MainScreen"
+    MDBoxLayout:
+        orientation: "vertical"
+        MDTopAppBar:
+            title: "Course Selection Program"
+            left_action_items:[['menu',lambda x:app.navigation_draw()]]
+            right_action_items:[['logout',lambda x:app.navigation_draw()]]
+            elavation:10
+            md_bg_color:0,0,100/255,1
+
+        MDBoxLayout:
+            padding:10
+            MDGridLayout:
+                id:grid
+                rows:5
+                MDBoxLayout:
+                    MDLabel:
+                        id:course_title
+                        text:" DAY 1 DATA "
+                        halign:"center"
+                        font_style:"H3"
+                        underline:True
+                MDGridLayout:
+                    cols:2
+                    MDLabel:
+                        text:"Did you wake up early?"
+                    MDCheckbox:
+                        id:checkbox_x
+                        size_hint:None,None
+                        on_active:app.click_checkbox(check_value="X",*args)
+                MDGridLayout:
+                    cols:2
+                    MDLabel:
+                        text:"Did you visit the library?"
+                    MDCheckbox:
+                        id:checkbox_y
+                        size_hint:None,None
+                        on_active:app.click_checkbox(check_value="Y",*args)
+                MDGridLayout:
+                    cols:2
+                    MDLabel:
+                        text:"Did you do some programming?"
+                    MDCheckbox:
+                        id:checkbox_z
+                        size_hint:None,None
+                        on_active:app.click_checkbox(check_value="Z",*args)
+                        
+                MDRectangleFlatButton:
+                    text:"Submit"
+                    pos_hint:{"center_x": .5}
+                    size_hint:None,None
+                    on_release:app.update_data()

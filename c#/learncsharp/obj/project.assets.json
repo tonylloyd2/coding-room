@@ -8,23 +8,23 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\profiler\\.nuget\\packages\\": {},
+    "C:\\Users\\lloyd\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\profiler\\Documents\\GitHub\\coding-room\\c#\\learncsharp\\learncsharp.csproj",
+      "projectUniqueName": "C:\\Users\\lloyd\\Documents\\GitHub\\coding-room-master\\c#\\learncsharp\\learncsharp.csproj",
       "projectName": "learncsharp",
-      "projectPath": "C:\\Users\\profiler\\Documents\\GitHub\\coding-room\\c#\\learncsharp\\learncsharp.csproj",
-      "packagesPath": "C:\\Users\\profiler\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\profiler\\Documents\\GitHub\\coding-room\\c#\\learncsharp\\obj\\",
+      "projectPath": "C:\\Users\\lloyd\\Documents\\GitHub\\coding-room-master\\c#\\learncsharp\\learncsharp.csproj",
+      "packagesPath": "C:\\Users\\lloyd\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\lloyd\\Documents\\GitHub\\coding-room-master\\c#\\learncsharp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\profiler\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\lloyd\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -56,7 +56,8 @@
           "net47",
           "net471",
           "net472",
-          "net48"
+          "net48",
+          "net481"
         ],
         "assetTargetFallback": true,
         "warn": true,
@@ -65,7 +66,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -1,5 +1,5 @@
 package music;
-
+import
 import java.io.*;
 import javax.sound.sampled.*;
 

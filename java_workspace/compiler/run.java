@@ -1,9 +1,9 @@
-public class Main extends Methods_test {
+import java.util1.Scanner;
+public class test{
 
-	public void  getDetails() {
-		super.getDetails();
-		System.out.printf("B",null);
-
+	public static void main(String[] args) {
+		
+	System.out.println( "test project");
+		
 	}
-
-}
+ }

@@ -1,10 +1,7 @@
-package com.company;
-
 
 import org.jpl7.PrologException;
 import org.jpl7.Query;
 import org.jpl7.Term;
-
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -15,6 +12,7 @@ import java.io.PrintStream;
 import java.util.HashMap;
 import java.util.Map;
 
+@SuppressWarnings("unused")
 public class Main {
 
     public static void main(String[] args) {
@@ -66,7 +64,7 @@ class frontend {
             public void actionPerformed(ActionEvent e) {
                 try {
                     //assigning prolog file location path to a String
-                    String con = "consult('/home/cypher/Documents/ccs315_intelligent/intelligent.pl')";
+                    String con = "consult('./MINERALS.pl')";
   /*                  Query q1 =
                             new Query(
                                     "consult",

@@ -6,7 +6,7 @@ namespace lloyd{
 class learn{
 
         static Void Main(string[] args){
-            Console.WriteLine("hello world")
+            Console.WriteLine("hello world");
         }
         
     } 

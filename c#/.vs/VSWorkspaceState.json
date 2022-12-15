@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Lab10",
+    "\\learncsharp"
   ],
-  "SelectedNode": "\\c#.code-workspace",
+  "SelectedNode": "\\learn.cs",
   "PreviewInSolutionExplorer": false
 }
